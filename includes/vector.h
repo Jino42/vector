@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/14 22:14:46 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/10/17 16:28:08 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/17 16:31:36 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@
 # define VECTOR_H
 
 # include <math.h>
-# include "../libft/includes/libft.h"
+# include "../../libft/includes/libft.h"
 # include <stdbool.h>
 
 typedef struct	s_vector

@@ -9,5 +9,5 @@ void		vector_limit(t_vector *a, const float limit)
 		a->y *= limit;
 		a->z *= limit;
 	}
-	return (new);
+	return ;
 }
