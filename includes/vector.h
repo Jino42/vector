@@ -6,12 +6,14 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/14 22:14:46 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/10/16 14:54:32 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/17 16:28:08 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* TODO
 ***** make oadd & add
+
+*********MOER LIMIT
 
 ** add
 ** sub
@@ -75,6 +77,7 @@ void			vector_invert(t_vector *vec);
 void 			vector_rotate_z(t_vector *a, const float angle);
 void 			vector_rotate_y(t_vector *a, const float angle);
 void 			vector_rotate_x(t_vector *a, const float angle);
+void			vector_limit(t_vector *a, const float limit);
 
 /* */
 bool			vector_aequals(const t_vector *a, const t_vector *b);
