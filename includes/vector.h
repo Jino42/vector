@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/14 22:14:46 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/10/17 16:31:36 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/31 23:24:03 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@
 # include <math.h>
 # include "../../libft/includes/libft.h"
 # include <stdbool.h>
+# include <stdio.h> ///////////
 
 typedef struct	s_vector
 {
@@ -107,6 +108,6 @@ t_vector			vector_lerp_unclamped(const t_vector *a, const t_vector *b, const flo
 t_vector			vector_move_towards(const t_vector *a, const t_vector *b, const float t);
 t_vector			vector_cross_product(const t_vector *a, const t_vector *b);
 
-
+void				vector_string(t_vector *v);
 
 #endif
