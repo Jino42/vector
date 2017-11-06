@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/14 22:14:46 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/10/31 23:24:03 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/11/06 10:08:30 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,8 @@ t_vector 		vector_get_rotate_x(const t_vector *a, const float angle);
 t_vector			vector_lerp(const t_vector *a, const t_vector *b, const float t);
 t_vector			vector_lerp_unclamped(const t_vector *a, const t_vector *b, const float t);
 t_vector			vector_move_towards(const t_vector *a, const t_vector *b, const float t);
-t_vector			vector_cross_product(const t_vector *a, const t_vector *b);
+t_vector			vector_get_cross_product(const t_vector *a, const t_vector *b);
+void				vector_cross_product(t_vector *a, const t_vector *b);
 
 void				vector_string(t_vector *v);
 
