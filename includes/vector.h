@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/14 22:14:46 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/11/06 10:08:30 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/11/17 15:02:36 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,9 @@ void 			vector_rotate_z(t_vector *a, const float angle);
 void 			vector_rotate_y(t_vector *a, const float angle);
 void 			vector_rotate_x(t_vector *a, const float angle);
 void			vector_limit(t_vector *a, const float limit);
+void			vector_inverse_rotate(t_vector *this, const t_vector *rot);
+void			vector_rotate(t_vector *this, const t_vector *rot);
+
 
 /* */
 bool			vector_aequals(const t_vector *a, const t_vector *b);
@@ -102,6 +105,8 @@ t_vector		vector_get_invert(const t_vector *vec);
 t_vector 		vector_get_rotate_z(const t_vector *a, const float angle);
 t_vector 		vector_get_rotate_y(const t_vector *a, const float angle);
 t_vector 		vector_get_rotate_x(const t_vector *a, const float angle);
+t_vector		vector_get_inverse_rotate(const t_vector *this, const t_vector *rot);
+t_vector		vector_get_rotate(const t_vector *this, const t_vector *rot);
 
 t_vector			vector_lerp(const t_vector *a, const t_vector *b, const float t);
 t_vector			vector_lerp_unclamped(const t_vector *a, const t_vector *b, const float t);
