@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector_normalize.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/10 22:32:34 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/12/10 22:38:38 by ntoniolo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vector.h"
 
 t_vector		vector_get_normalize(const t_vector *vec)
 {
-	t_vector new;
-	float magnitude;
+	t_vector	new;
+	float		magnitude;
 
 	magnitude = vector_sqrt_magnitude(vec);
 	if (!magnitude)
@@ -13,8 +25,8 @@ t_vector		vector_get_normalize(const t_vector *vec)
 	new.z = vec->z / magnitude;
 	return (new);
 }
-#include <stdio.h>
-void		vector_normalize(t_vector *vec)
+
+void			vector_normalize(t_vector *vec)
 {
 	float magnitude;
 

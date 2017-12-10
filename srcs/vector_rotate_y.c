@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector_rotate_y.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/10 22:32:43 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/12/10 22:39:11 by ntoniolo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vector.h"
 
-void 	vector_rotate_y(t_vector *a, const float angle)
+void		vector_rotate_y(t_vector *a, const float angle)
 {
 	float tmp;
 
@@ -10,7 +22,7 @@ void 	vector_rotate_y(t_vector *a, const float angle)
 	return ;
 }
 
-t_vector 	vector_get_rotate_y(const t_vector *a, const float angle)
+t_vector	vector_get_rotate_y(const t_vector *a, const float angle)
 {
 	t_vector new;
 

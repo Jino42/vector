@@ -5,21 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/17 14:54:30 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/11/29 19:47:38 by ntoniolo         ###   ########.fr       */
+/*   Created: 2017/12/10 22:32:35 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/12/10 22:35:59 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vector.h"
 
-void	vector_rotate(t_vector *this, const t_vector *rot)
+void		vector_rotate(t_vector *this, const t_vector *rot)
 {
 	vector_rotate_x(this, rot->x);
 	vector_rotate_y(this, rot->y);
 	vector_rotate_z(this, rot->z);
 }
 
-void	vector_inverse_rotate(t_vector *this, const t_vector *rot)
+void		vector_inverse_rotate(t_vector *this, const t_vector *rot)
 {
 	vector_rotate_z(this, -rot->z);
 	vector_rotate_y(this, -rot->y);

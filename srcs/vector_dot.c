@@ -1,8 +1,16 @@
-#include "vector.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector_dot.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/10 22:32:11 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/12/10 22:36:45 by ntoniolo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*
-** Vecteur normalisé seulement
-*/
+#include "vector.h"
 
 float		vector_dot(const t_vector *a, const t_vector *b)
 {

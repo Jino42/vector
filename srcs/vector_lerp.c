@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vector_lerp.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/12/10 22:32:19 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/12/10 22:38:24 by ntoniolo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vector.h"
 
 t_vector		vector_lerp(const t_vector *a, const t_vector *b, const float t)
 {
-	t_vector new;
-	float clamp;
+	t_vector	new;
+	float		clamp;
 
 	clamp = t;
 	if (t < 0)
@@ -16,7 +28,8 @@ t_vector		vector_lerp(const t_vector *a, const t_vector *b, const float t)
 	return (new);
 }
 
-t_vector		vector_lerp_unclamped(const t_vector *a, const t_vector *b, const float t)
+t_vector		vector_lerp_unclamped(const t_vector *a,
+											const t_vector *b, const float t)
 {
 	t_vector new;
 
