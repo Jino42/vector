@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/11/17 14:57:56 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/12/10 20:45:56 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,8 +46,7 @@ srcs/vector_rotate_y.c \
 srcs/vector_rotate_z.c \
 srcs/vector_limit.c \
 srcs/vector_floor.c \
-srcs/vector_rotate.c \
-srcs/vector_string.c
+srcs/vector_rotate.c
 
 OBJET = $(SRC:.c=.o)
 

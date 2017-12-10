@@ -4,11 +4,15 @@ t_vector		vector_get_copy(const t_vector *a)
 {
 	t_vector new;
 
-	ft_memcpy(&new, a, sizeof(t_vector));
+	new.x = a->x;
+	new.y = a->y;
+	new.z = a->z;
 	return (new);
 }
 
 void		vector_copy(t_vector *a, const t_vector *b)
 {
-	ft_memcpy(a, b, sizeof(t_vector));
+	a->x = b->x;
+	a->y = b->y;
+	a->z = b->z;
 }
